@@ -1,0 +1,18 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name MwbarcodescannerBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "com.manateeworks.barcodescanner.MwbarcodescannerModule.h"
+#include "com.manateeworks.barcodescanner.ExampleProxy.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+com.manateeworks.barcodescanner.MwbarcodescannerModule, ::com::manateeworks::barcodescanner::MwbarcodescannerModule::bindProxy, ::com::manateeworks::barcodescanner::MwbarcodescannerModule::dispose
+com.manateeworks.barcodescanner.ExampleProxy, ::com::manateeworks::barcodescanner::mwbarcodescanner::ExampleProxy::bindProxy, ::com::manateeworks::barcodescanner::mwbarcodescanner::ExampleProxy::dispose
+%%

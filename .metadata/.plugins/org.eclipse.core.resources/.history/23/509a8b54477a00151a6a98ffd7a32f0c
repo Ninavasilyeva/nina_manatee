@@ -1,0 +1,4 @@
+titanium.platform=/Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/
+android.platform=/android/platforms/android-22
+google.apis=/android/add-ons/addon-google_apis-google-22
+android.ndk=/Volumes/source/android-ndk-r10e

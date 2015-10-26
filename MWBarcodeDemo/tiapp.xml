@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app 
+  xmlns:ti="http://ti.appcelerator.org">
+  <guid>82875ab0-6596-4a95-9666-cf4260d6e172</guid>
+  <id>com.manateeworks.barcodedemo</id>
+  <name>MWBarcodeDemo</name>
+  <version>1.0</version>
+  <publisher>vladimirzivkovic</publisher>
+  <url>http://</url>
+  <description>not specified</description>
+  <copyright>2013 by vladimirzivkovic</copyright>
+  <icon>appicon.png</icon>
+  <persistent-wifi>false</persistent-wifi>
+  <prerendered-icon>false</prerendered-icon>
+  <statusbar-style>default</statusbar-style>
+  <statusbar-hidden>false</statusbar-hidden>
+  <fullscreen>false</fullscreen>
+  <navbar-hidden>false</navbar-hidden>
+  <analytics>true</analytics>
+  <property name="ti.ui.defaultunit" type="string">system</property>
+  <iphone>
+    <orientations device="iphone">
+      <orientation>Ti.UI.PORTRAIT</orientation>
+    </orientations>
+    <orientations device="ipad">
+      <orientation>Ti.UI.PORTRAIT</orientation>
+      <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+      <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+      <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+    </orientations>
+  </iphone>
+  <android 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <manifest>
+      <uses-sdk android:minSdkVersion="17"/>
+      <uses-sdk android:targetSdkVersion="22"/>
+    </manifest>
+  </android>
+  <mobileweb>
+    <precache/>
+    <splash>
+      <enabled>true</enabled>
+      <inline-css-images>true</inline-css-images>
+    </splash>
+    <theme>default</theme>
+  </mobileweb>
+  <modules>
+    <module platform="iphone" version="1.0.10">com.manateeworks.barcodescanner</module>
+    <module platform="android" version="1.0.10">com.manateeworks.barcodescanner</module>
+    <module platform="commonjs">ti.cloud</module>
+  </modules>
+  <deployment-targets>
+    <target device="blackberry">false</target>
+    <target device="android">true</target>
+    <target device="ipad">true</target>
+    <target device="iphone">true</target>
+    <target device="mobileweb">false</target>
+    <target device="tizen">false</target>
+  </deployment-targets>
+  <sdk-version>5.0.2.GA</sdk-version>
+  <property name="appc-app-id" type="string">561a04f87c8b01d23cda274d</property>
+  <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
+  <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
+  <property name="acs-oauth-secret-development" type="string">lG9WxziCBMuDkvQzYEfY7jZe4MmHJyk0</property>
+  <property name="acs-oauth-key-development" type="string">HXSKsRlcVy8xh2jdcR72tf2JcdV7z7mF</property>
+  <property name="acs-api-key-development" type="string">3mk5fbVaOD8MgjToRkUYakhPH8rh3BG9</property>
+  <property name="acs-username-development" type="string">appc_app_user_dev</property>
+  <property name="acs-password-development" type="string">o5lEoMdFl2G50ypVvP</property>
+  <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
+  <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
+  <property name="acs-oauth-secret-production" type="string">3OHlJZvie8DCM05cbFCxSrJ2WMb5H5ZQ</property>
+  <property name="acs-oauth-key-production" type="string">5q65cAv45LAVznXM9UnnO8qt9rpXa2bm</property>
+  <property name="acs-api-key-production" type="string">v7oZShWi0XjzgMhZnhncfjuf6P1zgWOT</property>
+  <property name="acs-username-production" type="string">appc_app_user</property>
+  <property name="acs-password-production" type="string">4ieiHYa7blOkLXUfIz</property>
+  <property name="appc-org-id" type="string">100072905</property>
+  <property name="appc-creator-user-id" type="string">a41504ec-6d9d-4aa1-80c8-e855c209c194</property>
+</ti:app>

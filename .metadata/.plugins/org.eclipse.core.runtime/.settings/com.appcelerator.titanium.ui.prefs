@@ -1,0 +1,14 @@
+=run
+Application\ Installer\:ConsoleLogLevel=Debug
+LAST_LAUNCH_TIMESTAMP=1445819192786
+MWBarcodeDemo\:launchMode=run
+MWBarcodeDemo\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.run.device.launchShortcut.db23216aaa1ad26127022ba55f6959d8da064c90
+eclipse.preferences.version=1
+module_android\:launchMode=package
+module_android\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.module.launchShortcut
+module_ios\:launchMode=package
+module_ios\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.module.launchShortcut
+preference.show.console.onError=false
+preference.studio.perspective.version=103
+titanium-barcode\:launchMode=package
+titanium-barcode\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.module.launchShortcut

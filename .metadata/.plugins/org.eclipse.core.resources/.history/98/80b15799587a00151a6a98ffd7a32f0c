@@ -1,0 +1,526 @@
+/var/folders/r_/mz_m_yjd2kj10w607lzxz0s00000gn/T//superstar/mwbarcodescanner-generated/obj/local/x86/objs/com.manateeworks.barcodescanner/__/MwbarcodescannerBootstrap.o: \
+ jni/../MwbarcodescannerBootstrap.cpp \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/jni.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/cdefs.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/cdefs_elf.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/android/api-level.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stdarg.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cprolog.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/features.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_stlport_version.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/user_config.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/compat.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/host.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/_system.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/_android.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/_gcc.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/stl_confix.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/_native_headers.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_epilog.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h \
+ /Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/v8.h \
+ /Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/v8stdint.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stddef.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stdio.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/stdio.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/types.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/stdint.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/_types.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/_types.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/posix_types.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/stddef.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/compiler.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/posix_types.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/posix_types_32.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/types.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/types.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/kernel.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/sysmacros.h \
+ /Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/AndroidUtil.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/android/log.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stdlib.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/stdlib.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/string.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/string.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/malloc.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/alloca.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/strings.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/memory.h \
+ /Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/KrollBindings.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/map \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_prolog.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/debug/_debug.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_map.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_tree.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_algobase.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cstddef.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cstring.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/using/cstring \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/climits \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/limits.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/limits.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/limits.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/limits.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/internal_types.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/limits.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/syslimits.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/page.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/page_32.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cstdlib.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cmath.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/math.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/math.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_pair.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/type_traits.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/type_manips.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_move_construct_fwk.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_iterator_base.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ptrs_specialize.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_algobase.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_function_base.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_iterator.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_alloc.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_new.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/../../gabi++/include/new \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/cstddef \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/../../gabi++/include/cstddef \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/exception \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/../../gabi++/include/exception \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/../../gabi++/include/gabixx_config.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cstdio.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_construct.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_alloc.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_tree.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_relops_cont.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/string \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_fwd.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_iosfwd.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/char_traits.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cwchar.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/wchar.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/time.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/time.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/time.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/time.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/siginfo.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm-generic/siginfo.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/_wchar_limits.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_mbstate_t.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_uninitialized.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_base.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_npos.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_operators.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ctraits_fns.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_function.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_function_adaptors.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_range_errors.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_hash.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_hash_fun.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_io.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ostream.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ios.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ios_base.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_stdexcept_base.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_exception.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_locale.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_threads.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/pthread.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/pthread.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/signal.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/signal.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/signal.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm-generic/signal.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/sigcontext.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/ucontext.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/user.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sched.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_threads.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ctime.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_facets_fwd.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ctype.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/c_locale.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_numpunct.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ios.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_streambuf.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_streambuf.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ostreambuf_iterator.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ostream.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_num_put.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_iostream_string.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_num_put.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_limits.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/cfloat \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/float.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_limits.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_istream.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_istreambuf_iterator.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_istream.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_num_get.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_num_get.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_io.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/vector \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_vector.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_vector.c \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_bvector.h \
+ /Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/V8Util.h \
+ jni/../BootstrapJS.cpp jni/../KrollGeneratedBindings.cpp \
+ jni/com.manateeworks.barcodescanner.MwbarcodescannerModule.h \
+ /Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/Proxy.h \
+ /Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/JavaObject.h \
+ /Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/assert.h \
+ /Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/assert.h \
+ /Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/EventEmitter.h \
+ /Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/NativeObject.h \
+ jni/com.manateeworks.barcodescanner.ExampleProxy.h
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/jni.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/cdefs.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/cdefs_elf.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/android/api-level.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stdarg.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cprolog.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/features.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_stlport_version.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/user_config.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/compat.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/host.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/_system.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/_android.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/_gcc.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/stl_confix.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/config/_native_headers.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_epilog.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h:
+
+/Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/v8.h:
+
+/Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/v8stdint.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stddef.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stdio.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/stdio.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/types.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/stdint.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/_types.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/_types.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/posix_types.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/stddef.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/compiler.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/posix_types.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/posix_types_32.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/types.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/types.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/kernel.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/sysmacros.h:
+
+/Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/AndroidUtil.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/android/log.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stdlib.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/stdlib.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/string.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/string.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/malloc.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/alloca.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/strings.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/memory.h:
+
+/Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/KrollBindings.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/map:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_prolog.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/debug/_debug.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_map.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_tree.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_algobase.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cstddef.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cstring.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/using/cstring:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/climits:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/limits.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/limits.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/limits.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/limits.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/internal_types.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/machine/limits.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/syslimits.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/page.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/page_32.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cstdlib.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cmath.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/math.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/math.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_pair.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/type_traits.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/type_manips.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_move_construct_fwk.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_iterator_base.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ptrs_specialize.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_algobase.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_function_base.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_iterator.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_alloc.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_new.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/../../gabi++/include/new:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/cstddef:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/../../gabi++/include/cstddef:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/exception:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/../../gabi++/include/exception:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/../../gabi++/include/gabixx_config.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cstdio.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_construct.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_alloc.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_tree.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_relops_cont.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/string:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_fwd.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_iosfwd.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/char_traits.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_cwchar.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/wchar.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/time.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/time.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/time.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/linux/time.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/siginfo.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm-generic/siginfo.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/_wchar_limits.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_mbstate_t.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_uninitialized.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_base.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_npos.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_operators.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ctraits_fns.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_function.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_function_adaptors.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_range_errors.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_hash.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_hash_fun.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_io.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ostream.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ios.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ios_base.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_stdexcept_base.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_exception.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_locale.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_threads.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/pthread.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/pthread.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/signal.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/signal.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/signal.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm-generic/signal.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/asm/sigcontext.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/ucontext.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sys/user.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/sched.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_threads.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ctime.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_facets_fwd.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ctype.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/c_locale.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_numpunct.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ios.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_streambuf.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_streambuf.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ostreambuf_iterator.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_ostream.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_num_put.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_iostream_string.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_num_put.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_limits.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/cfloat:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/float.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_limits.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_istream.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_istreambuf_iterator.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_istream.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_num_get.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_num_get.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_string_io.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/vector:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_vector.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_vector.c:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/stl/_bvector.h:
+
+/Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/V8Util.h:
+
+jni/../BootstrapJS.cpp:
+
+jni/../KrollGeneratedBindings.cpp:
+
+jni/com.manateeworks.barcodescanner.MwbarcodescannerModule.h:
+
+/Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/Proxy.h:
+
+/Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/JavaObject.h:
+
+/Volumes/source/android-ndk-r10e/sources/cxx-stl/stlport/stlport/assert.h:
+
+/Volumes/source/android-ndk-r10e/platforms/android-9/arch-x86/usr/include/../include/assert.h:
+
+/Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/EventEmitter.h:
+
+/Users/SuperStar/Library/Application\ Support/Titanium/mobilesdk/osx/5.0.2.GA/android/native/include/NativeObject.h:
+
+jni/com.manateeworks.barcodescanner.ExampleProxy.h:

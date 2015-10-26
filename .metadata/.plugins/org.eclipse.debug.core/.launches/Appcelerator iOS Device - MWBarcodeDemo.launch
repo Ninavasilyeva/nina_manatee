@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.appcelerator.titanium.mobile.ui.ios.installer.launchConfigurationType">
+<booleanAttribute key="ATTR_MINIFY" value="true"/>
+<stringAttribute key="ATTR_PROJECT_NAME" value="MWBarcodeDemo"/>
+<stringAttribute key="ATTR_TITANIUM_DEPLOY_TYPE" value="development"/>
+<booleanAttribute key="ATTR_UPLOAD_DEBUG_SYMBOLS" value="false"/>
+<stringAttribute key="appid" value="com.manateeworks.barcodedemo"/>
+<stringAttribute key="certificate" value="Wojciech Goleniewski (62L342QXDA)"/>
+<stringAttribute key="debug_config" value="::1445733309915:192.168.234.131"/>
+<stringAttribute key="debug_hosts" value="192.168.234.131"/>
+<stringAttribute key="device_id" value="db23216aaa1ad26127022ba55f6959d8da064c90"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/MWBarcodeDemo"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.capture_output" value="true"/>
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="true"/>
+<stringAttribute key="process_factory_id" value="com.appcelerator.titanium.ui.logLevelFilteringProcessFactory"/>
+<stringAttribute key="sdk_version" value="9.0"/>
+<stringAttribute key="uuid" value="80257fec-696f-4321-8442-68cf61f7166f"/>
+</launchConfiguration>

@@ -1,0 +1,1984 @@
+/**
+ * Appcelerator Titanium Mobile
+ * Copyright (c) 2011-2013 by Appcelerator, Inc. All Rights Reserved.
+ * Licensed under the terms of the Apache Public License
+ * Please see the LICENSE included with this distribution for details.
+ */
+
+/** This code is generated, do not edit by hand. **/
+
+#include "com.manateeworks.barcodescanner.MwbarcodescannerModule.h"
+
+#include "AndroidUtil.h"
+#include "EventEmitter.h"
+#include "JNIUtil.h"
+#include "JSException.h"
+#include "Proxy.h"
+#include "ProxyFactory.h"
+#include "TypeConverter.h"
+#include "V8Util.h"
+
+
+
+#include "com.manateeworks.barcodescanner.ExampleProxy.h"
+
+#include "org.appcelerator.kroll.KrollModule.h"
+
+#define TAG "MwbarcodescannerModule"
+
+using namespace v8;
+
+		namespace com {
+		namespace manateeworks {
+		namespace barcodescanner {
+
+
+Persistent<FunctionTemplate> MwbarcodescannerModule::proxyTemplate = Persistent<FunctionTemplate>();
+jclass MwbarcodescannerModule::javaClass = NULL;
+
+MwbarcodescannerModule::MwbarcodescannerModule(jobject javaObject) : titanium::Proxy(javaObject)
+{
+}
+
+void MwbarcodescannerModule::bindProxy(Handle<Object> exports)
+{
+	if (proxyTemplate.IsEmpty()) {
+		getProxyTemplate();
+	}
+
+	// use symbol over string for efficiency
+	Handle<String> nameSymbol = String::NewSymbol("Mwbarcodescanner");
+
+	Local<Function> proxyConstructor = proxyTemplate->GetFunction();
+	Local<Object> moduleInstance = proxyConstructor->NewInstance();
+	exports->Set(nameSymbol, moduleInstance);
+}
+
+void MwbarcodescannerModule::dispose()
+{
+	LOGD(TAG, "dispose()");
+	if (!proxyTemplate.IsEmpty()) {
+		proxyTemplate.Dispose();
+		proxyTemplate = Persistent<FunctionTemplate>();
+	}
+
+	titanium::KrollModule::dispose();
+}
+
+Handle<FunctionTemplate> MwbarcodescannerModule::getProxyTemplate()
+{
+	if (!proxyTemplate.IsEmpty()) {
+		return proxyTemplate;
+	}
+
+	LOGD(TAG, "GetProxyTemplate");
+
+	javaClass = titanium::JNIUtil::findClass("com/manateeworks/barcodescanner/MwbarcodescannerModule");
+	HandleScope scope;
+
+	// use symbol over string for efficiency
+	Handle<String> nameSymbol = String::NewSymbol("Mwbarcodescanner");
+
+	Handle<FunctionTemplate> t = titanium::Proxy::inheritProxyTemplate(
+		titanium::KrollModule::getProxyTemplate()
+, javaClass, nameSymbol);
+
+	proxyTemplate = Persistent<FunctionTemplate>::New(t);
+	proxyTemplate->Set(titanium::Proxy::inheritSymbol,
+		FunctionTemplate::New(titanium::Proxy::inherit<MwbarcodescannerModule>)->GetFunction());
+
+	titanium::ProxyFactory::registerProxyPair(javaClass, *proxyTemplate, true);
+
+	// Method bindings --------------------------------------------------------
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBuseBlinkingLineOverlay", MwbarcodescannerModule::MWBuseBlinkingLineOverlay);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBenableZoom", MwbarcodescannerModule::MWBenableZoom);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBresumeScanning", MwbarcodescannerModule::MWBresumeScanning);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBuseHiRes", MwbarcodescannerModule::MWBuseHiRes);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBsetMaxThreads", MwbarcodescannerModule::MWBsetMaxThreads);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBgetLibVersion", MwbarcodescannerModule::MWBgetLibVersion);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBcloseScanner", MwbarcodescannerModule::MWBcloseScanner);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "starttttScanning", MwbarcodescannerModule::starttttScanning);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBsetActiveSubcodes", MwbarcodescannerModule::MWBsetActiveSubcodes);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBsetScanningRect", MwbarcodescannerModule::MWBsetScanningRect);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBsetDesiredResolution", MwbarcodescannerModule::MWBsetDesiredResolution);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "addOverlayView", MwbarcodescannerModule::addOverlayView);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBsetFlags", MwbarcodescannerModule::MWBsetFlags);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "startScanning", MwbarcodescannerModule::startScanning);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "startdfdfScanning", MwbarcodescannerModule::startdfdfScanning);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBsetZoomLevels", MwbarcodescannerModule::MWBsetZoomLevels);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBsetLevel", MwbarcodescannerModule::MWBsetLevel);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBregisterCode", MwbarcodescannerModule::MWBregisterCode);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBsetCloseCameraOnDetection", MwbarcodescannerModule::MWBsetCloseCameraOnDetection);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBgetLibVersionString", MwbarcodescannerModule::MWBgetLibVersionString);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "example", MwbarcodescannerModule::example);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBsetDirection", MwbarcodescannerModule::MWBsetDirection);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBsetButtonsVisible", MwbarcodescannerModule::MWBsetButtonsVisible);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "MWBsetActiveCodes", MwbarcodescannerModule::MWBsetActiveCodes);
+
+	Local<ObjectTemplate> prototypeTemplate = proxyTemplate->PrototypeTemplate();
+	Local<ObjectTemplate> instanceTemplate = proxyTemplate->InstanceTemplate();
+
+	// Delegate indexed property get and set to the Java proxy.
+	instanceTemplate->SetIndexedPropertyHandler(titanium::Proxy::getIndexedProperty,
+		titanium::Proxy::setIndexedProperty);
+
+	// Constants --------------------------------------------------------------
+
+	// Dynamic properties -----------------------------------------------------
+	instanceTemplate->SetAccessor(String::NewSymbol("exampleProp"),
+			MwbarcodescannerModule::getter_exampleProp
+			, MwbarcodescannerModule::setter_exampleProp
+, Handle<Value>(), DEFAULT);
+
+	// Accessors --------------------------------------------------------------
+
+	return proxyTemplate;
+}
+
+// Methods --------------------------------------------------------------------
+Handle<Value> MwbarcodescannerModule::MWBuseBlinkingLineOverlay(const Arguments& args)
+{
+	LOGD(TAG, "MWBuseBlinkingLineOverlay()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBuseBlinkingLineOverlay", "(Z)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBuseBlinkingLineOverlay' with signature '(Z)V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 1) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBuseBlinkingLineOverlay: Invalid number of arguments. Expected 1 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[1];
+
+
+
+
+	if (!args[0]->IsBoolean() && !args[0]->IsNull()) {
+		const char *error = "Invalid value, expected type Boolean.";
+		LOGE(TAG, error);
+		return titanium::JSException::Error(error);
+	}
+	
+	
+	if (!args[0]->IsNull()) {
+		Local<Boolean> arg_0 = args[0]->ToBoolean();
+		jArguments[0].z =
+			titanium::TypeConverter::jsBooleanToJavaBoolean(env, arg_0);
+	} else {
+		jArguments[0].z = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::MWBenableZoom(const Arguments& args)
+{
+	LOGD(TAG, "MWBenableZoom()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBenableZoom", "(Z)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBenableZoom' with signature '(Z)V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 1) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBenableZoom: Invalid number of arguments. Expected 1 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[1];
+
+
+
+
+	if (!args[0]->IsBoolean() && !args[0]->IsNull()) {
+		const char *error = "Invalid value, expected type Boolean.";
+		LOGE(TAG, error);
+		return titanium::JSException::Error(error);
+	}
+	
+	
+	if (!args[0]->IsNull()) {
+		Local<Boolean> arg_0 = args[0]->ToBoolean();
+		jArguments[0].z =
+			titanium::TypeConverter::jsBooleanToJavaBoolean(env, arg_0);
+	} else {
+		jArguments[0].z = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::MWBresumeScanning(const Arguments& args)
+{
+	LOGD(TAG, "MWBresumeScanning()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBresumeScanning", "()V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBresumeScanning' with signature '()V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	jvalue* jArguments = 0;
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::MWBuseHiRes(const Arguments& args)
+{
+	LOGD(TAG, "MWBuseHiRes()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBuseHiRes", "(Z)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBuseHiRes' with signature '(Z)V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 1) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBuseHiRes: Invalid number of arguments. Expected 1 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[1];
+
+
+
+
+	if (!args[0]->IsBoolean() && !args[0]->IsNull()) {
+		const char *error = "Invalid value, expected type Boolean.";
+		LOGE(TAG, error);
+		return titanium::JSException::Error(error);
+	}
+	
+	
+	if (!args[0]->IsNull()) {
+		Local<Boolean> arg_0 = args[0]->ToBoolean();
+		jArguments[0].z =
+			titanium::TypeConverter::jsBooleanToJavaBoolean(env, arg_0);
+	} else {
+		jArguments[0].z = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::MWBsetMaxThreads(const Arguments& args)
+{
+	LOGD(TAG, "MWBsetMaxThreads()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBsetMaxThreads", "(I)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBsetMaxThreads' with signature '(I)V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 1) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBsetMaxThreads: Invalid number of arguments. Expected 1 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[1];
+
+
+
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[0]) && !args[0]->IsUndefined()) || args[0]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[0]->IsNull()) {
+		Local<Number> arg_0 = args[0]->ToNumber();
+		jArguments[0].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_0);
+	} else {
+		jArguments[0].i = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::MWBgetLibVersion(const Arguments& args)
+{
+	LOGD(TAG, "MWBgetLibVersion()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBgetLibVersion", "()I");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBgetLibVersion' with signature '()I'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	jvalue* jArguments = 0;
+
+	jobject javaProxy = proxy->getJavaObject();
+	jint jResult = (jint)env->CallIntMethodA(javaProxy, methodID, jArguments);
+
+
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		Handle<Value> jsException = titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+		return jsException;
+	}
+
+
+	Handle<Number> v8Result = titanium::TypeConverter::javaIntToJsNumber(env, jResult);
+
+
+
+	return v8Result;
+
+}
+Handle<Value> MwbarcodescannerModule::MWBcloseScanner(const Arguments& args)
+{
+	LOGD(TAG, "MWBcloseScanner()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBcloseScanner", "()V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBcloseScanner' with signature '()V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	jvalue* jArguments = 0;
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::starttttScanning(const Arguments& args)
+{
+	LOGD(TAG, "starttttScanning()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "starttttScanning", "(Lorg/appcelerator/kroll/KrollDict;)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'starttttScanning' with signature '(Lorg/appcelerator/kroll/KrollDict;)V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 1) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "starttttScanning: Invalid number of arguments. Expected 1 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[1];
+
+
+
+
+	bool isNew_0;
+	
+	if (!args[0]->IsNull()) {
+		Local<Value> arg_0 = args[0];
+		jArguments[0].l =
+			titanium::TypeConverter::jsObjectToJavaKrollDict(env, arg_0, &isNew_0);
+	} else {
+		jArguments[0].l = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+			if (isNew_0) {
+				env->DeleteLocalRef(jArguments[0].l);
+			}
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::MWBsetActiveSubcodes(const Arguments& args)
+{
+	LOGD(TAG, "MWBsetActiveSubcodes()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBsetActiveSubcodes", "(II)I");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBsetActiveSubcodes' with signature '(II)I'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 2) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBsetActiveSubcodes: Invalid number of arguments. Expected 2 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[2];
+
+
+
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[0]) && !args[0]->IsUndefined()) || args[0]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[0]->IsNull()) {
+		Local<Number> arg_0 = args[0]->ToNumber();
+		jArguments[0].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_0);
+	} else {
+		jArguments[0].i = NULL;
+	}
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[1]) && !args[1]->IsUndefined()) || args[1]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[1]->IsNull()) {
+		Local<Number> arg_1 = args[1]->ToNumber();
+		jArguments[1].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_1);
+	} else {
+		jArguments[1].i = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	jint jResult = (jint)env->CallIntMethodA(javaProxy, methodID, jArguments);
+
+
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		Handle<Value> jsException = titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+		return jsException;
+	}
+
+
+	Handle<Number> v8Result = titanium::TypeConverter::javaIntToJsNumber(env, jResult);
+
+
+
+	return v8Result;
+
+}
+Handle<Value> MwbarcodescannerModule::MWBsetScanningRect(const Arguments& args)
+{
+	LOGD(TAG, "MWBsetScanningRect()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBsetScanningRect", "(IIIII)I");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBsetScanningRect' with signature '(IIIII)I'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 5) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBsetScanningRect: Invalid number of arguments. Expected 5 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[5];
+
+
+
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[0]) && !args[0]->IsUndefined()) || args[0]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[0]->IsNull()) {
+		Local<Number> arg_0 = args[0]->ToNumber();
+		jArguments[0].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_0);
+	} else {
+		jArguments[0].i = NULL;
+	}
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[1]) && !args[1]->IsUndefined()) || args[1]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[1]->IsNull()) {
+		Local<Number> arg_1 = args[1]->ToNumber();
+		jArguments[1].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_1);
+	} else {
+		jArguments[1].i = NULL;
+	}
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[2]) && !args[2]->IsUndefined()) || args[2]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[2]->IsNull()) {
+		Local<Number> arg_2 = args[2]->ToNumber();
+		jArguments[2].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_2);
+	} else {
+		jArguments[2].i = NULL;
+	}
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[3]) && !args[3]->IsUndefined()) || args[3]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[3]->IsNull()) {
+		Local<Number> arg_3 = args[3]->ToNumber();
+		jArguments[3].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_3);
+	} else {
+		jArguments[3].i = NULL;
+	}
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[4]) && !args[4]->IsUndefined()) || args[4]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[4]->IsNull()) {
+		Local<Number> arg_4 = args[4]->ToNumber();
+		jArguments[4].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_4);
+	} else {
+		jArguments[4].i = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	jint jResult = (jint)env->CallIntMethodA(javaProxy, methodID, jArguments);
+
+
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		Handle<Value> jsException = titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+		return jsException;
+	}
+
+
+	Handle<Number> v8Result = titanium::TypeConverter::javaIntToJsNumber(env, jResult);
+
+
+
+	return v8Result;
+
+}
+Handle<Value> MwbarcodescannerModule::MWBsetDesiredResolution(const Arguments& args)
+{
+	LOGD(TAG, "MWBsetDesiredResolution()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBsetDesiredResolution", "(II)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBsetDesiredResolution' with signature '(II)V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 2) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBsetDesiredResolution: Invalid number of arguments. Expected 2 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[2];
+
+
+
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[0]) && !args[0]->IsUndefined()) || args[0]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[0]->IsNull()) {
+		Local<Number> arg_0 = args[0]->ToNumber();
+		jArguments[0].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_0);
+	} else {
+		jArguments[0].i = NULL;
+	}
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[1]) && !args[1]->IsUndefined()) || args[1]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[1]->IsNull()) {
+		Local<Number> arg_1 = args[1]->ToNumber();
+		jArguments[1].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_1);
+	} else {
+		jArguments[1].i = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::addOverlayView(const Arguments& args)
+{
+	LOGD(TAG, "addOverlayView()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "addOverlayView", "(Ljava/util/HashMap;)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'addOverlayView' with signature '(Ljava/util/HashMap;)V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+
+	jvalue jArguments[1];
+
+
+
+
+	bool isNew_0;
+	if (args.Length() <= 0) {
+		jArguments[0].l = NULL;
+
+	} else {
+	
+	if (!args[0]->IsNull()) {
+		Local<Value> arg_0 = args[0];
+		jArguments[0].l =
+			titanium::TypeConverter::jsValueToJavaObject(env, arg_0, &isNew_0);
+	} else {
+		jArguments[0].l = NULL;
+	}
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+			if (isNew_0) {
+				env->DeleteLocalRef(jArguments[0].l);
+			}
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::MWBsetFlags(const Arguments& args)
+{
+	LOGD(TAG, "MWBsetFlags()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBsetFlags", "(II)I");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBsetFlags' with signature '(II)I'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 2) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBsetFlags: Invalid number of arguments. Expected 2 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[2];
+
+
+
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[0]) && !args[0]->IsUndefined()) || args[0]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[0]->IsNull()) {
+		Local<Number> arg_0 = args[0]->ToNumber();
+		jArguments[0].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_0);
+	} else {
+		jArguments[0].i = NULL;
+	}
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[1]) && !args[1]->IsUndefined()) || args[1]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[1]->IsNull()) {
+		Local<Number> arg_1 = args[1]->ToNumber();
+		jArguments[1].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_1);
+	} else {
+		jArguments[1].i = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	jint jResult = (jint)env->CallIntMethodA(javaProxy, methodID, jArguments);
+
+
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		Handle<Value> jsException = titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+		return jsException;
+	}
+
+
+	Handle<Number> v8Result = titanium::TypeConverter::javaIntToJsNumber(env, jResult);
+
+
+
+	return v8Result;
+
+}
+Handle<Value> MwbarcodescannerModule::startScanning(const Arguments& args)
+{
+	LOGD(TAG, "startScanning()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "startScanning", "(Lorg/appcelerator/kroll/KrollDict;)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'startScanning' with signature '(Lorg/appcelerator/kroll/KrollDict;)V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 1) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "startScanning: Invalid number of arguments. Expected 1 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[1];
+
+
+
+
+	bool isNew_0;
+	
+	if (!args[0]->IsNull()) {
+		Local<Value> arg_0 = args[0];
+		jArguments[0].l =
+			titanium::TypeConverter::jsObjectToJavaKrollDict(env, arg_0, &isNew_0);
+	} else {
+		jArguments[0].l = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+			if (isNew_0) {
+				env->DeleteLocalRef(jArguments[0].l);
+			}
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::startdfdfScanning(const Arguments& args)
+{
+	LOGD(TAG, "startdfdfScanning()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "startdfdfScanning", "(Lorg/appcelerator/kroll/KrollDict;)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'startdfdfScanning' with signature '(Lorg/appcelerator/kroll/KrollDict;)V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 1) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "startdfdfScanning: Invalid number of arguments. Expected 1 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[1];
+
+
+
+
+	bool isNew_0;
+	
+	if (!args[0]->IsNull()) {
+		Local<Value> arg_0 = args[0];
+		jArguments[0].l =
+			titanium::TypeConverter::jsObjectToJavaKrollDict(env, arg_0, &isNew_0);
+	} else {
+		jArguments[0].l = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+			if (isNew_0) {
+				env->DeleteLocalRef(jArguments[0].l);
+			}
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::MWBsetZoomLevels(const Arguments& args)
+{
+	LOGD(TAG, "MWBsetZoomLevels()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBsetZoomLevels", "(III)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBsetZoomLevels' with signature '(III)V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 3) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBsetZoomLevels: Invalid number of arguments. Expected 3 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[3];
+
+
+
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[0]) && !args[0]->IsUndefined()) || args[0]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[0]->IsNull()) {
+		Local<Number> arg_0 = args[0]->ToNumber();
+		jArguments[0].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_0);
+	} else {
+		jArguments[0].i = NULL;
+	}
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[1]) && !args[1]->IsUndefined()) || args[1]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[1]->IsNull()) {
+		Local<Number> arg_1 = args[1]->ToNumber();
+		jArguments[1].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_1);
+	} else {
+		jArguments[1].i = NULL;
+	}
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[2]) && !args[2]->IsUndefined()) || args[2]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[2]->IsNull()) {
+		Local<Number> arg_2 = args[2]->ToNumber();
+		jArguments[2].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_2);
+	} else {
+		jArguments[2].i = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::MWBsetLevel(const Arguments& args)
+{
+	LOGD(TAG, "MWBsetLevel()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBsetLevel", "(I)I");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBsetLevel' with signature '(I)I'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 1) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBsetLevel: Invalid number of arguments. Expected 1 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[1];
+
+
+
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[0]) && !args[0]->IsUndefined()) || args[0]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[0]->IsNull()) {
+		Local<Number> arg_0 = args[0]->ToNumber();
+		jArguments[0].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_0);
+	} else {
+		jArguments[0].i = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	jint jResult = (jint)env->CallIntMethodA(javaProxy, methodID, jArguments);
+
+
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		Handle<Value> jsException = titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+		return jsException;
+	}
+
+
+	Handle<Number> v8Result = titanium::TypeConverter::javaIntToJsNumber(env, jResult);
+
+
+
+	return v8Result;
+
+}
+Handle<Value> MwbarcodescannerModule::MWBregisterCode(const Arguments& args)
+{
+	LOGD(TAG, "MWBregisterCode()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBregisterCode", "(ILjava/lang/String;Ljava/lang/String;)I");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBregisterCode' with signature '(ILjava/lang/String;Ljava/lang/String;)I'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 3) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBregisterCode: Invalid number of arguments. Expected 3 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[3];
+
+
+
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[0]) && !args[0]->IsUndefined()) || args[0]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[0]->IsNull()) {
+		Local<Number> arg_0 = args[0]->ToNumber();
+		jArguments[0].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_0);
+	} else {
+		jArguments[0].i = NULL;
+	}
+
+	
+	
+	if (!args[1]->IsNull()) {
+		Local<Value> arg_1 = args[1];
+		jArguments[1].l =
+			titanium::TypeConverter::jsValueToJavaString(env, arg_1);
+	} else {
+		jArguments[1].l = NULL;
+	}
+
+	
+	
+	if (!args[2]->IsNull()) {
+		Local<Value> arg_2 = args[2];
+		jArguments[2].l =
+			titanium::TypeConverter::jsValueToJavaString(env, arg_2);
+	} else {
+		jArguments[2].l = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	jint jResult = (jint)env->CallIntMethodA(javaProxy, methodID, jArguments);
+
+
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+				env->DeleteLocalRef(jArguments[1].l);
+
+
+				env->DeleteLocalRef(jArguments[2].l);
+
+
+	if (env->ExceptionCheck()) {
+		Handle<Value> jsException = titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+		return jsException;
+	}
+
+
+	Handle<Number> v8Result = titanium::TypeConverter::javaIntToJsNumber(env, jResult);
+
+
+
+	return v8Result;
+
+}
+Handle<Value> MwbarcodescannerModule::MWBsetCloseCameraOnDetection(const Arguments& args)
+{
+	LOGD(TAG, "MWBsetCloseCameraOnDetection()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBsetCloseCameraOnDetection", "(Z)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBsetCloseCameraOnDetection' with signature '(Z)V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 1) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBsetCloseCameraOnDetection: Invalid number of arguments. Expected 1 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[1];
+
+
+
+
+	if (!args[0]->IsBoolean() && !args[0]->IsNull()) {
+		const char *error = "Invalid value, expected type Boolean.";
+		LOGE(TAG, error);
+		return titanium::JSException::Error(error);
+	}
+	
+	
+	if (!args[0]->IsNull()) {
+		Local<Boolean> arg_0 = args[0]->ToBoolean();
+		jArguments[0].z =
+			titanium::TypeConverter::jsBooleanToJavaBoolean(env, arg_0);
+	} else {
+		jArguments[0].z = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::MWBgetLibVersionString(const Arguments& args)
+{
+	LOGD(TAG, "MWBgetLibVersionString()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBgetLibVersionString", "()Ljava/lang/String;");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBgetLibVersionString' with signature '()Ljava/lang/String;'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	jvalue* jArguments = 0;
+
+	jobject javaProxy = proxy->getJavaObject();
+	jstring jResult = (jstring)env->CallObjectMethodA(javaProxy, methodID, jArguments);
+
+
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		Handle<Value> jsException = titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+		return jsException;
+	}
+
+	if (jResult == NULL) {
+		return Null();
+	}
+
+	Handle<Value> v8Result = titanium::TypeConverter::javaStringToJsString(env, jResult);
+
+	env->DeleteLocalRef(jResult);
+
+
+	return v8Result;
+
+}
+Handle<Value> MwbarcodescannerModule::example(const Arguments& args)
+{
+	LOGD(TAG, "example()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "example", "()Ljava/lang/String;");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'example' with signature '()Ljava/lang/String;'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	jvalue* jArguments = 0;
+
+	jobject javaProxy = proxy->getJavaObject();
+	jstring jResult = (jstring)env->CallObjectMethodA(javaProxy, methodID, jArguments);
+
+
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		Handle<Value> jsException = titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+		return jsException;
+	}
+
+	if (jResult == NULL) {
+		return Null();
+	}
+
+	Handle<Value> v8Result = titanium::TypeConverter::javaStringToJsString(env, jResult);
+
+	env->DeleteLocalRef(jResult);
+
+
+	return v8Result;
+
+}
+Handle<Value> MwbarcodescannerModule::MWBsetDirection(const Arguments& args)
+{
+	LOGD(TAG, "MWBsetDirection()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBsetDirection", "(I)I");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBsetDirection' with signature '(I)I'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 1) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBsetDirection: Invalid number of arguments. Expected 1 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[1];
+
+
+
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[0]) && !args[0]->IsUndefined()) || args[0]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[0]->IsNull()) {
+		Local<Number> arg_0 = args[0]->ToNumber();
+		jArguments[0].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_0);
+	} else {
+		jArguments[0].i = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	jint jResult = (jint)env->CallIntMethodA(javaProxy, methodID, jArguments);
+
+
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		Handle<Value> jsException = titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+		return jsException;
+	}
+
+
+	Handle<Number> v8Result = titanium::TypeConverter::javaIntToJsNumber(env, jResult);
+
+
+
+	return v8Result;
+
+}
+Handle<Value> MwbarcodescannerModule::MWBsetButtonsVisible(const Arguments& args)
+{
+	LOGD(TAG, "MWBsetButtonsVisible()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBsetButtonsVisible", "(ZZ)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBsetButtonsVisible' with signature '(ZZ)V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 2) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBsetButtonsVisible: Invalid number of arguments. Expected 2 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[2];
+
+
+
+
+	if (!args[0]->IsBoolean() && !args[0]->IsNull()) {
+		const char *error = "Invalid value, expected type Boolean.";
+		LOGE(TAG, error);
+		return titanium::JSException::Error(error);
+	}
+	
+	
+	if (!args[0]->IsNull()) {
+		Local<Boolean> arg_0 = args[0]->ToBoolean();
+		jArguments[0].z =
+			titanium::TypeConverter::jsBooleanToJavaBoolean(env, arg_0);
+	} else {
+		jArguments[0].z = NULL;
+	}
+
+	if (!args[1]->IsBoolean() && !args[1]->IsNull()) {
+		const char *error = "Invalid value, expected type Boolean.";
+		LOGE(TAG, error);
+		return titanium::JSException::Error(error);
+	}
+	
+	
+	if (!args[1]->IsNull()) {
+		Local<Boolean> arg_1 = args[1]->ToBoolean();
+		jArguments[1].z =
+			titanium::TypeConverter::jsBooleanToJavaBoolean(env, arg_1);
+	} else {
+		jArguments[1].z = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
+
+}
+Handle<Value> MwbarcodescannerModule::MWBsetActiveCodes(const Arguments& args)
+{
+	LOGD(TAG, "MWBsetActiveCodes()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "MWBsetActiveCodes", "(I)I");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'MWBsetActiveCodes' with signature '(I)I'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	if (args.Length() < 1) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "MWBsetActiveCodes: Invalid number of arguments. Expected 1 but got %d", args.Length());
+		return ThrowException(Exception::Error(String::New(errorStringBuffer)));
+	}
+
+	jvalue jArguments[1];
+
+
+
+
+	
+	
+		if ((titanium::V8Util::isNaN(args[0]) && !args[0]->IsUndefined()) || args[0]->ToString()->Length() == 0) {
+			const char *error = "Invalid value, expected type Number.";
+			LOGE(TAG, error);
+			return titanium::JSException::Error(error);
+		}
+	if (!args[0]->IsNull()) {
+		Local<Number> arg_0 = args[0]->ToNumber();
+		jArguments[0].i =
+			titanium::TypeConverter::jsNumberToJavaInt(env, arg_0);
+	} else {
+		jArguments[0].i = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	jint jResult = (jint)env->CallIntMethodA(javaProxy, methodID, jArguments);
+
+
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		Handle<Value> jsException = titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+		return jsException;
+	}
+
+
+	Handle<Number> v8Result = titanium::TypeConverter::javaIntToJsNumber(env, jResult);
+
+
+
+	return v8Result;
+
+}
+
+// Dynamic property accessors -------------------------------------------------
+
+Handle<Value> MwbarcodescannerModule::getter_exampleProp(Local<String> property, const AccessorInfo& info)
+{
+	LOGD(TAG, "get exampleProp");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "getExampleProp", "()Ljava/lang/String;");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'getExampleProp' with signature '()Ljava/lang/String;'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(info.Holder());
+
+	if (!proxy) {
+		return Undefined();
+	}
+
+	jvalue* jArguments = 0;
+
+	jobject javaProxy = proxy->getJavaObject();
+	jstring jResult = (jstring)env->CallObjectMethodA(javaProxy, methodID, jArguments);
+
+
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		Handle<Value> jsException = titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+		return jsException;
+	}
+
+	if (jResult == NULL) {
+		return Null();
+	}
+
+	Handle<Value> v8Result = titanium::TypeConverter::javaStringToJsString(env, jResult);
+
+	env->DeleteLocalRef(jResult);
+
+
+	return v8Result;
+
+}
+
+void MwbarcodescannerModule::setter_exampleProp(Local<String> property, Local<Value> value, const AccessorInfo& info)
+{
+	LOGD(TAG, "set exampleProp");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		LOGE(TAG, "Failed to get environment, exampleProp wasn't set");
+		return;
+	}
+
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(MwbarcodescannerModule::javaClass, "setExampleProp", "(Ljava/lang/String;)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'setExampleProp' with signature '(Ljava/lang/String;)V'";
+			LOGE(TAG, error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(info.Holder());
+	if (!proxy) {
+		return;
+	}
+
+	jvalue jArguments[1];
+
+	
+	
+	if (!value->IsNull()) {
+		Local<Value> arg_0 = value;
+		jArguments[0].l =
+			titanium::TypeConverter::jsValueToJavaString(env, arg_0);
+	} else {
+		jArguments[0].l = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+				env->DeleteLocalRef(jArguments[0].l);
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+}
+
+
+
+		} // barcodescanner
+		} // manateeworks
+		} // com

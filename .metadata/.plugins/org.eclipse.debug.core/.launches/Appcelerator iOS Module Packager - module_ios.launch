@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.appcelerator.titanium.mobile.ui.ios.module.packager.launchConfigurationType">
+<booleanAttribute key="ATTR_DISTRIBUTE_UNZIPPED" value="true"/>
+<stringAttribute key="ATTR_PROJECT_NAME" value="module_ios"/>
+<stringAttribute key="com.appcelerator.titanium.mobile.module.deploy_target" value="PROJECT"/>
+<stringAttribute key="distribute_path" value="/Volumes/source/manatee_barcode/MWBarcodeDemo"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/module_ios"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.capture_output" value="true"/>
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
+</launchConfiguration>

@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+iosLaunchConfigurationAttributes/ATTR_MINIFY=true
+iosLaunchConfigurationAttributes/ATTR_PROJECT_NAME=MWBarcodeDemo
+iosLaunchConfigurationAttributes/ATTR_UPLOAD_DEBUG_SYMBOLS=false
+iosLaunchConfigurationAttributes/appid=com.manateeworks.barcodedemo
+iosLaunchConfigurationAttributes/certificate=Wojciech Goleniewski (62L342QXDA)
+iosLaunchConfigurationAttributes/keychain=
+iosLaunchConfigurationAttributes/sdk_version=9.0
+iosLaunchConfigurationAttributes/uuid=80257fec-696f-4321-8442-68cf61f7166f
